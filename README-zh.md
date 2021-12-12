@@ -14,7 +14,7 @@
 sudo apt install  libcurl4-openssl-dev
 sudo apt install liblzma-dev
 cd mongo
-# 安装mongod mongo mongos 
+# 安装mongod mongo mongos 修改了源码也需要重新编译
 python3 buildscripts/scons.py install-core
 ```
 ## 修改配置
