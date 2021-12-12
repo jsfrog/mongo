@@ -159,7 +159,6 @@ CMakeLists.txt
 .xcworkspace
 
 # Visual Studio and VSCode projects
-.vscode/
 .vs/
 /x64/
 
