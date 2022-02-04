@@ -6,7 +6,7 @@
         "args": [
             "${file}",
             "-o",    // 指定输出文件名，不加该参数则默认输出a.exe，Linux下默认a.out
-            "${fileDirname}/${fileBasenameNoExtension}",
+            "${fileDirname}/${fileBasenameNoExtension}.out",
             "-lpthread",
             "-g",    // 生成和调试有关的信息
             "-m64",  // 不知为何有时会生成16位程序而无法运行，此条可强制生成64位的

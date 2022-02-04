@@ -193,3 +193,4 @@ resmoke.ini
 default.profraw
 /corpora
 /corpora-merged
+docs-zh/tests/*.out
