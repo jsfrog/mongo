@@ -138,7 +138,9 @@ public:
 - std::front_inserter: 首部插入迭代器。
 - std::inserter: 指定位置插入迭代器。
 
-
+### explicit、implicit
+- explicit: 表明该构造函数是显示的
+- implicit: 表明该构造函数是隐示的
 ## mongo源码中比较常见的写法
 ### MONGO_likely与MONGO_unlikely
 `likely`中文解释是可能发生，unlikely不可能发生的。代码在文件`/path/mongo/src/mongo/platform/compiler_gcc.h`中。将`__builtin_expect`指令封装为`MONGO_likely`和`MONGO_unlikely`两个宏。简单来说`__builtin_expect`作用是允许程序员将最有可能执行的分支告诉编译器，通过这种方式，编译器在编译过程中，会将可能性更大的代码紧跟着起面的代码，从而减少指令跳转带来的性能上的下降。
